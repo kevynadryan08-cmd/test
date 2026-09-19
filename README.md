@@ -6,12 +6,13 @@
   <title>Study Case - Git &amp; GitHub Workshop</title>
 
  
-  <!--
-    TODO (Anggota 2 - branch "styling"):
-    Tambahkan tag <link> di bawah ini untuk menghubungkan file style.css
-    Contoh: <link rel="stylesheet" href="style.css">
-  -->
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Case - Git & GitHub Workshop</title>
 
+  <link rel="stylesheet" href="style.css">
+</head>
 
 </head>
 <body>
