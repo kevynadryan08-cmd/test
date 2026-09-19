@@ -3,6 +3,7 @@
    Ditambahkan oleh Anggota 2 di branch "styling"
    ========================================================= */
 
+/* ---------- Global ---------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +12,6 @@
 }
 
 :root {
-  --background: #eef3f8;
   --surface: rgba(255, 255, 255, 0.82);
   --text: #172033;
   --muted: #68758a;
@@ -24,7 +24,12 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(135deg, #eef3f8 0%, #dce8f3 52%, #f8eee7 100%);
+  background: linear-gradient(
+    135deg,
+    #eef3f8 0%,
+    #dce8f3 52%,
+    #f8eee7 100%
+  );
   color: var(--text);
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -68,7 +73,9 @@ body {
   font-weight: 700;
   font-family: inherit;
   text-decoration: none;
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .member-link:hover,
@@ -77,6 +84,7 @@ body {
   color: var(--accent-dark);
 }
 
+/* ---------- Dark Mode Button ---------- */
 .btn-toggle {
   padding: 10px 16px;
   border: 1px solid rgba(36, 59, 100, 0.12);
@@ -86,7 +94,9 @@ body {
   cursor: pointer;
   font-size: 0.85rem;
   font-weight: 700;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .btn-toggle:hover {
@@ -100,24 +110,31 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+
   max-width: 760px;
   margin: 56px auto 36px;
   padding: 48px 24px;
+
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 28px;
   box-shadow: var(--shadow);
+
   backdrop-filter: blur(18px);
 }
 
 .avatar {
   width: 132px;
   height: 132px;
+
   object-fit: cover;
   border-radius: 50%;
+
   margin-bottom: 16px;
+
   border: 5px solid #ffffff;
   outline: 3px solid var(--accent);
+
   box-shadow: 0 12px 26px rgba(255, 107, 74, 0.26);
 }
 
@@ -132,22 +149,33 @@ body {
   margin-bottom: 20px;
 }
 
+/* ---------- Primary Button ---------- */
 .btn-primary {
   padding: 12px 22px;
+
   border: none;
   border-radius: 999px;
+
   background-color: var(--accent);
   color: #ffffff;
+
   font-size: 1rem;
   font-weight: 700;
+
   cursor: pointer;
+
   box-shadow: 0 10px 20px rgba(255, 107, 74, 0.22);
-  transition: transform 0.15s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+
+  transition:
+    transform 0.15s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .btn-primary:hover {
   background-color: var(--accent-dark);
   transform: translateY(-2px);
+
   box-shadow: 0 14px 26px rgba(255, 107, 74, 0.3);
 }
 
@@ -155,17 +183,22 @@ body {
 .about,
 .skills {
   max-width: 760px;
+
   margin: 0 auto 24px;
   padding: 24px;
+
   background: rgba(255, 255, 255, 0.64);
+
   border: 1px solid var(--border);
   border-radius: 20px;
+
   box-shadow: 0 12px 32px rgba(40, 61, 92, 0.08);
 }
 
 .about h3,
 .skills h3 {
   margin-bottom: 8px;
+
   color: var(--heading);
   font-size: 1.05rem;
 }
@@ -175,63 +208,90 @@ body {
   line-height: 1.7;
 }
 
+/* ---------- Skills List ---------- */
 #skill-list {
-  list-style: none;
   display: flex;
-  gap: 12px;
   flex-wrap: wrap;
+  gap: 12px;
+
+  list-style: none;
 }
 
 #skill-list li {
+  padding: 6px 14px;
+
   background-color: #e5edf6;
   color: var(--heading);
-  padding: 6px 14px;
+
   border-radius: 999px;
+
   font-size: 0.9rem;
   font-weight: 700;
 }
 
 /* ---------- Footer ---------- */
 footer {
-  text-align: center;
   padding: 12px 16px 28px;
+
+  text-align: center;
+
   color: var(--muted);
   font-size: 0.85rem;
 }
 
-/* ---------- Dark Mode ---------- */
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
 body.dark-mode {
-  --background: #151d2b;
   --surface: rgba(27, 39, 58, 0.88);
   --text: #f5f6fa;
   --muted: #aebbd0;
   --heading: #eaf1ff;
   --border: rgba(255, 255, 255, 0.1);
-  background: linear-gradient(135deg, #151d2b 0%, #24324a 55%, #342a32 100%);
+
+  background: linear-gradient(
+    135deg,
+    #151d2b 0%,
+    #24324a 55%,
+    #342a32 100%
+  );
+
   color: var(--text);
 }
 
+/* ---------- Dark Mode Navbar ---------- */
 body.dark-mode .navbar {
   background-color: rgba(21, 29, 43, 0.72);
+
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* ---------- Dark Mode Button ---------- */
 body.dark-mode .btn-toggle {
   background-color: #f5f6fa;
   color: #1e272e;
 }
 
+/* ---------- Dark Mode About & Skills ---------- */
 body.dark-mode .about,
 body.dark-mode .skills {
   background: var(--surface);
 }
 
+/* ---------- Dark Mode Skills ---------- */
 body.dark-mode #skill-list li {
   background-color: #30415c;
   color: #eaf1ff;
 }
 
+/* =========================================================
+   RESPONSIVE / MOBILE
+   ========================================================= */
+
 @media (max-width: 600px) {
+
+  /* ---------- Navbar ---------- */
   .navbar {
     padding: 16px 20px;
   }
@@ -258,11 +318,13 @@ body.dark-mode #skill-list li {
     font-size: 0.78rem;
   }
 
+  /* ---------- Hero ---------- */
   .hero {
     margin: 28px 16px 24px;
     padding: 36px 20px;
   }
 
+  /* ---------- About & Skills ---------- */
   .about,
   .skills {
     margin-left: 16px;
