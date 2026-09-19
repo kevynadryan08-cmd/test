@@ -1,78 +1,70 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Study Case - Git &amp; GitHub Workshop</title>
-
- 
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Study Case - Git & GitHub Workshop</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Case - Git & GitHub Workshop</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1 class="logo">Profile Card</h1>
 
-</head>
-<body>
+      <div class="navbar-actions">
+        <nav class="member-nav" aria-label="Navigasi anggota">
+          <button class="member-link active" type="button" data-member="0" aria-pressed="true">
+            Anggota 1
+          </button>
+          <button class="member-link" type="button" data-member="1" aria-pressed="false">
+            Anggota 2
+          </button>
+          <button class="member-link" type="button" data-member="2" aria-pressed="false">
+            Anggota 3
+          </button>
+        </nav>
 
-  <header class="navbar">
-    <h1 class="logo">Profile Card</h1>
-    <div class="navbar-actions">
-      <nav class="member-nav" aria-label="Navigasi anggota">
-        <button class="member-link active" type="button" data-member="0" aria-pressed="true">Anggota 1</button>
-        <button class="member-link" type="button" data-member="1" aria-pressed="false">Anggota 2</button>
-        <button class="member-link" type="button" data-member="2" aria-pressed="false">Anggota 3</button>
-      </nav>
-      <button id="theme-toggle" class="btn-toggle">🌙 Dark Mode</button>
-    </div>
-  </header>
+        <button id="theme-toggle" class="btn-toggle">🌙 Dark Mode</button>
+      </div>
+    </header>
 
-  <main>
-    <section class="hero">
-      <img
-        src="https://i.pinimg.com/736x/fc/af/7a/fcaf7aec4b7be05a0d062eff7851d2aa.jpg"
-        alt="Foto profil Anggota 1"
-        class="avatar"
-      />
-      <h2 id="user-name">Nama Anggota 1</h2>
-      <p id="user-role">Frontend Developer</p>
-      <button id="counter-btn" class="btn-primary">
-        👍 Like (<span id="counter">0</span>)
-      </button>
-    </section>
+    <main>
+      <section class="hero">
+        <img
+          src="https://i.pinimg.com/736x/fc/af/7a/fcaf7aec4b7be05a0d062eff7851d2aa.jpg"
+          alt="Foto profil Anggota 1"
+          class="avatar"
+        />
+        <h2 id="user-name">Nama Anggota 1</h2>
+        <p id="user-role">Frontend Developer</p>
 
-    <section class="about">
-      <h3>Tentang Saya</h3>
-      <p>
-        Saya fokus membangun tampilan web yang rapi, responsif, dan mudah
-        digunakan melalui struktur HTML dan desain antarmuka yang konsisten.
-      </p>
-    </section>
+        <button id="counter-btn" class="btn-primary">
+          👍 Like (<span id="counter">0</span>)
+        </button>
+      </section>
 
-    <section class="skills">
-      <h3>Skill</h3>
-      <ul id="skill-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-    </section>
-  </main>
+      <section class="about">
+        <h3>Tentang Saya</h3>
+        <p>
+          Saya fokus membangun tampilan web yang rapi, responsif, dan mudah
+          digunakan melalui struktur HTML dan desain antarmuka yang konsisten.
+        </p>
+      </section>
 
-  <footer>
-    <p>&copy; 2026 Workshop Git &amp; GitHub</p>
-  </footer>
+      <section class="skills">
+        <h3>Skill</h3>
+        <ul id="skill-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+    </main>
 
- 
-  <!--
-    TODO (Anggota 3 - branch "scripting"):
-    Tambahkan tag <script> di bawah ini (sebelum </body>) untuk
-    menghubungkan file script.js
-    Contoh: <script src="script.js"></script>
-  -->
+    <footer>
+      <p>&copy; 2026 Workshop Git & GitHub</p>
+    </footer>
 
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
