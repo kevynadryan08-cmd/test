@@ -42,7 +42,7 @@
       </button>
     </section>
 
-    <section class="about">
+  <section class="about">
       <h3>Tentang Saya</h3>
       <p>
         Saya fokus membangun tampilan web yang rapi, responsif, dan mudah
@@ -50,7 +50,7 @@
       </p>
     </section>
 
-    <section class="skills">
+  <section class="skills">
       <h3>Skill</h3>
       <ul id="skill-list">
         <li>HTML</li>
